@@ -10,5 +10,6 @@
 	<node name="listener" pkg = "husky_highlevel_controller" type = "listener.py" output="screen">
 		<rosparam command = "load" file="$(find husky_highlevel_controller)/config/config.yaml" />
 	</node>
+	<node type="rviz" name="rviz" pkg="rviz" args="-d $(find husky_highlevel_controller)/rviz/config_file.rviz" />
 
 </launch>
